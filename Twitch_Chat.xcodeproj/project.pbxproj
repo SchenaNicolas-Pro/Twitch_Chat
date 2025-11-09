@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		900A72F22CBE94C700B4C85E /* FollowedChannelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900A72F12CBE94C700B4C85E /* FollowedChannelInfo.swift */; };
+		900A72F42CC641D700B4C85E /* ChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900A72F32CC641D700B4C85E /* ChannelView.swift */; };
+		902313FB2D10362800FA9F6F /* TokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902313FA2D10362800FA9F6F /* TokenService.swift */; };
+		902313FE2D10489100FA9F6F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902313FD2D10489100FA9F6F /* AuthService.swift */; };
+		902314002D104AF800FA9F6F /* UserInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902313FF2D104AF800FA9F6F /* UserInfoService.swift */; };
+		902917722E3F96800030F711 /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902917712E3F96800030F711 /* EmptyResponse.swift */; };
+		902BD1442C9984960051CF8E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BD1432C9984960051CF8E /* SignInViewController.swift */; };
+		902BD1482C99884E0051CF8E /* AuthLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BD1472C99884E0051CF8E /* AuthLoader.swift */; };
+		903A54152CB3D9DF00C5A4BB /* TwitchAPIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903A54142CB3D9DF00C5A4BB /* TwitchAPIEndpoint.swift */; };
+		903A541D2CB3E41500C5A4BB /* TwitchChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903A541C2CB3E41500C5A4BB /* TwitchChatView.swift */; };
+		903B83CC2CABFA7A00B9D27C /* NetWorkToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903B83CB2CABFA7A00B9D27C /* NetWorkToken.swift */; };
+		903B83CE2CAFDCED00B9D27C /* UIViewController+PresentAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903B83CD2CAFDCED00B9D27C /* UIViewController+PresentAlert.swift */; };
+		903B83D02CAFE2E900B9D27C /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903B83CF2CAFE2E900B9D27C /* TokenManager.swift */; };
+		904019372D47931D0099918F /* UIImage+RotationToContextualActionImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904019362D47931D0099918F /* UIImage+RotationToContextualActionImage.swift */; };
+		908312DB2D2BDB6D00159B8C /* StreamerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908312DA2D2BDB6D00159B8C /* StreamerInfo.swift */; };
+		908312DD2D2BEE3F00159B8C /* DeconnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908312DC2D2BEE3F00159B8C /* DeconnectionViewController.swift */; };
+		908312DF2D2BEFBA00159B8C /* DeconnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908312DE2D2BEFBA00159B8C /* DeconnectionView.swift */; };
+		908312E12D2BF1AB00159B8C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908312E02D2BF1AB00159B8C /* TabBarController.swift */; };
+		908FC96D2E3E3F2C00F3541C /* ChannelUIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908FC96C2E3E3F2C00F3541C /* ChannelUIConfig.swift */; };
+		908FC9722E3E730100F3541C /* SessionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908FC9712E3E730100F3541C /* SessionInfo.swift */; };
+		9091FFBB2CFDCF8000570F66 /* TwitchChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9091FFBA2CFDCF8000570F66 /* TwitchChatTableViewCell.swift */; };
+		9091FFBD2CFDEB4300570F66 /* UIColor+ConvertFromHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9091FFBC2CFDEB4300570F66 /* UIColor+ConvertFromHex.swift */; };
+		909A70862CBD16CE00877C0E /* TwitchChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909A70852CBD16CE00877C0E /* TwitchChatService.swift */; };
+		909D01232E4BAE05005AF443 /* TwitchIRCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D01222E4BAE05005AF443 /* TwitchIRCClient.swift */; };
+		909D01252E4BB057005AF443 /* TwitchIRCParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D01242E4BB057005AF443 /* TwitchIRCParser.swift */; };
+		90A4C58F2E3FB1C30052BE08 /* AppViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A4C58E2E3FB1C30052BE08 /* AppViewControllerFactory.swift */; };
+		90A7E69A2CCA43730009C854 /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7E6992CCA43730009C854 /* UserInfoManager.swift */; };
+		90ACDCA72C984ECD00853691 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ACDCA62C984ECD00853691 /* AppDelegate.swift */; };
+		90ACDCA92C984ECD00853691 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ACDCA82C984ECD00853691 /* SceneDelegate.swift */; };
+		90ACDCB02C984ECE00853691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90ACDCAF2C984ECE00853691 /* Assets.xcassets */; };
+		90ACDCB32C984ECE00853691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90ACDCB12C984ECE00853691 /* LaunchScreen.storyboard */; };
+		90ACDCBE2C98504E00853691 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ACDCBD2C98504E00853691 /* SignInView.swift */; };
+		90ACDCC32C997C9F00853691 /* APIConfigKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ACDCC22C997C9F00853691 /* APIConfigKey.swift */; };
+		90ACDCC52C997D6400853691 /* TwitchAuthEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ACDCC42C997D6400853691 /* TwitchAuthEndpoint.swift */; };
+		90AEA9542CAFF9910088E515 /* TokenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AEA9532CAFF9910088E515 /* TokenLoader.swift */; };
+		90B78EA72CF5F1C5000A4BAF /* UIImage+ToGrayScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B78EA62CF5F1C5000A4BAF /* UIImage+ToGrayScale.swift */; };
+		90BEFCFD2CCFA60F00A597AA /* ChannelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BEFCFC2CCFA60F00A597AA /* ChannelCollectionViewCell.swift */; };
+		90C921122E38E61600CD3DE4 /* IRCMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C921112E38E61600CD3DE4 /* IRCMessage.swift */; };
+		90D2F0B72D75AFD300B85326 /* TwitchChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D2F0B62D75AFD300B85326 /* TwitchChatViewController.swift */; };
+		90DBB3A42E40E3E80035F920 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DBB3A32E40E3E80035F920 /* KeychainError.swift */; };
+		90DBB3A62E40F0530035F920 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DBB3A52E40F0530035F920 /* AppState.swift */; };
+		90DBB3A82E40F0880035F920 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DBB3A72E40F0880035F920 /* AppConstants.swift */; };
+		90DBB3AB2E40F1360035F920 /* ImageLoaderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DBB3AA2E40F1360035F920 /* ImageLoaderError.swift */; };
+		90E088C82CC8F9870026FFAD /* APIScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E088C72CC8F9870026FFAD /* APIScope.swift */; };
+		90E088CA2CC903C30026FFAD /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E088C92CC903C30026FFAD /* ChannelViewController.swift */; };
+		90E088CC2CC90BFA0026FFAD /* UserInfoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E088CB2CC90BFA0026FFAD /* UserInfoLoader.swift */; };
+		90E088CE2CC90C330026FFAD /* NetworkUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E088CD2CC90C330026FFAD /* NetworkUserInfo.swift */; };
+		90F21BE82E3CEDE700D79E46 /* AppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F21BE72E3CEDE700D79E46 /* AppDependencyContainer.swift */; };
+		90F21BEA2E3CF9F500D79E46 /* StreamerMetadataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F21BE92E3CF9F500D79E46 /* StreamerMetadataService.swift */; };
+		90F21BEE2E3D070400D79E46 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F21BED2E3D070400D79E46 /* NetworkClient.swift */; };
+		90F21BF52E3D098100D79E46 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F21BF42E3D098100D79E46 /* NetworkErrors.swift */; };
+		90F21BF72E3D0C2800D79E46 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F21BF62E3D0C2800D79E46 /* HTTPMethod.swift */; };
+		90F21BF92E3D0C8400D79E46 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F21BF82E3D0C8400D79E46 /* RequestBuilder.swift */; };
+		90F21BFB2E3D156D00D79E46 /* URLRequest+twitchGET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F21BFA2E3D156D00D79E46 /* URLRequest+twitchGET.swift */; };
+		90F933172E4B69EE00CB54C8 /* ChatMessageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F933162E4B69EE00CB54C8 /* ChatMessageStore.swift */; };
+		90FFEAE12CF4D36E004FF932 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FFEAE02CF4D36E004FF932 /* ImageLoader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		900A72F12CBE94C700B4C85E /* FollowedChannelInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowedChannelInfo.swift; sourceTree = "<group>"; };
+		900A72F32CC641D700B4C85E /* ChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelView.swift; sourceTree = "<group>"; };
+		902313FA2D10362800FA9F6F /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
+		902313FD2D10489100FA9F6F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		902313FF2D104AF800FA9F6F /* UserInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoService.swift; sourceTree = "<group>"; };
+		902917712E3F96800030F711 /* EmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResponse.swift; sourceTree = "<group>"; };
+		902BD1432C9984960051CF8E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		902BD1472C99884E0051CF8E /* AuthLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLoader.swift; sourceTree = "<group>"; };
+		903A54142CB3D9DF00C5A4BB /* TwitchAPIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchAPIEndpoint.swift; sourceTree = "<group>"; };
+		903A541C2CB3E41500C5A4BB /* TwitchChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchChatView.swift; sourceTree = "<group>"; };
+		903B83CB2CABFA7A00B9D27C /* NetWorkToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkToken.swift; sourceTree = "<group>"; };
+		903B83CD2CAFDCED00B9D27C /* UIViewController+PresentAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+PresentAlert.swift"; sourceTree = "<group>"; };
+		903B83CF2CAFE2E900B9D27C /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		904019362D47931D0099918F /* UIImage+RotationToContextualActionImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+RotationToContextualActionImage.swift"; sourceTree = "<group>"; };
+		908312DA2D2BDB6D00159B8C /* StreamerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamerInfo.swift; sourceTree = "<group>"; };
+		908312DC2D2BEE3F00159B8C /* DeconnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeconnectionViewController.swift; sourceTree = "<group>"; };
+		908312DE2D2BEFBA00159B8C /* DeconnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeconnectionView.swift; sourceTree = "<group>"; };
+		908312E02D2BF1AB00159B8C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		908FC96C2E3E3F2C00F3541C /* ChannelUIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelUIConfig.swift; sourceTree = "<group>"; };
+		908FC9712E3E730100F3541C /* SessionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInfo.swift; sourceTree = "<group>"; };
+		9091FFBA2CFDCF8000570F66 /* TwitchChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchChatTableViewCell.swift; sourceTree = "<group>"; };
+		9091FFBC2CFDEB4300570F66 /* UIColor+ConvertFromHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ConvertFromHex.swift"; sourceTree = "<group>"; };
+		909A70852CBD16CE00877C0E /* TwitchChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchChatService.swift; sourceTree = "<group>"; };
+		909D01222E4BAE05005AF443 /* TwitchIRCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchIRCClient.swift; sourceTree = "<group>"; };
+		909D01242E4BB057005AF443 /* TwitchIRCParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchIRCParser.swift; sourceTree = "<group>"; };
+		90A4C58E2E3FB1C30052BE08 /* AppViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewControllerFactory.swift; sourceTree = "<group>"; };
+		90A7E6992CCA43730009C854 /* UserInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
+		90ACDCA32C984ECD00853691 /* Twitch_Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitch_Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90ACDCA62C984ECD00853691 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90ACDCA82C984ECD00853691 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		90ACDCAF2C984ECE00853691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90ACDCB22C984ECE00853691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		90ACDCBD2C98504E00853691 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		90ACDCC22C997C9F00853691 /* APIConfigKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfigKey.swift; sourceTree = "<group>"; };
+		90ACDCC42C997D6400853691 /* TwitchAuthEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchAuthEndpoint.swift; sourceTree = "<group>"; };
+		90AEA9532CAFF9910088E515 /* TokenLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenLoader.swift; sourceTree = "<group>"; };
+		90B78EA62CF5F1C5000A4BAF /* UIImage+ToGrayScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ToGrayScale.swift"; sourceTree = "<group>"; };
+		90BEFCFC2CCFA60F00A597AA /* ChannelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCollectionViewCell.swift; sourceTree = "<group>"; };
+		90C921112E38E61600CD3DE4 /* IRCMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRCMessage.swift; sourceTree = "<group>"; };
+		90CF3C382E14074000632367 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90D2F0B62D75AFD300B85326 /* TwitchChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchChatViewController.swift; sourceTree = "<group>"; };
+		90DBB3A32E40E3E80035F920 /* KeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
+		90DBB3A52E40F0530035F920 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		90DBB3A72E40F0880035F920 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		90DBB3AA2E40F1360035F920 /* ImageLoaderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderError.swift; sourceTree = "<group>"; };
+		90E088C72CC8F9870026FFAD /* APIScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIScope.swift; sourceTree = "<group>"; };
+		90E088C92CC903C30026FFAD /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		90E088CB2CC90BFA0026FFAD /* UserInfoLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoLoader.swift; sourceTree = "<group>"; };
+		90E088CD2CC90C330026FFAD /* NetworkUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUserInfo.swift; sourceTree = "<group>"; };
+		90F21BE72E3CEDE700D79E46 /* AppDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyContainer.swift; sourceTree = "<group>"; };
+		90F21BE92E3CF9F500D79E46 /* StreamerMetadataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamerMetadataService.swift; sourceTree = "<group>"; };
+		90F21BED2E3D070400D79E46 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		90F21BF42E3D098100D79E46 /* NetworkErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		90F21BF62E3D0C2800D79E46 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		90F21BF82E3D0C8400D79E46 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		90F21BFA2E3D156D00D79E46 /* URLRequest+twitchGET.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+twitchGET.swift"; sourceTree = "<group>"; };
+		90F6DB3D2E50BCF000A4EDA4 /* Secrets.example.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Secrets.example.xcconfig; sourceTree = "<group>"; };
+		90F6DB3E2E50BCF000A4EDA4 /* Secrets.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		90F933162E4B69EE00CB54C8 /* ChatMessageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageStore.swift; sourceTree = "<group>"; };
+		90FFEAE02CF4D36E004FF932 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90ACDCA02C984ECD00853691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		902313FC2D10363200FA9F6F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				902313FD2D10489100FA9F6F /* AuthService.swift */,
+				902BD1472C99884E0051CF8E /* AuthLoader.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		902917702E3F80760030F711 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				90F21BFA2E3D156D00D79E46 /* URLRequest+twitchGET.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		903A54172CB3DA2F00C5A4BB /* Token */ = {
+			isa = PBXGroup;
+			children = (
+				902313FA2D10362800FA9F6F /* TokenService.swift */,
+				90AEA9532CAFF9910088E515 /* TokenLoader.swift */,
+				903B83CF2CAFE2E900B9D27C /* TokenManager.swift */,
+			);
+			path = Token;
+			sourceTree = "<group>";
+		};
+		904A4AC62E180769002C923A /* ChannelView */ = {
+			isa = PBXGroup;
+			children = (
+				900A72F32CC641D700B4C85E /* ChannelView.swift */,
+				90BEFCFC2CCFA60F00A597AA /* ChannelCollectionViewCell.swift */,
+			);
+			path = ChannelView;
+			sourceTree = "<group>";
+		};
+		905F8C262E4E2DA900403EFC /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				909A70852CBD16CE00877C0E /* TwitchChatService.swift */,
+				909D01222E4BAE05005AF443 /* TwitchIRCClient.swift */,
+				909D01242E4BB057005AF443 /* TwitchIRCParser.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		908FC9702E3E47C200F3541C /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				90FFEAE02CF4D36E004FF932 /* ImageLoader.swift */,
+				90DBB3AA2E40F1360035F920 /* ImageLoaderError.swift */,
+			);
+			path = ImageLoader;
+			sourceTree = "<group>";
+		};
+		90A7E69B2CCA46CC0009C854 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				902313FF2D104AF800FA9F6F /* UserInfoService.swift */,
+				90E088CB2CC90BFA0026FFAD /* UserInfoLoader.swift */,
+				90A7E6992CCA43730009C854 /* UserInfoManager.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		90ACDC9A2C984ECD00853691 = {
+			isa = PBXGroup;
+			children = (
+				90F6DB3D2E50BCF000A4EDA4 /* Secrets.example.xcconfig */,
+				90F6DB3E2E50BCF000A4EDA4 /* Secrets.xcconfig */,
+				90ACDCA52C984ECD00853691 /* Twitch_Chat */,
+				90ACDCA42C984ECD00853691 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90ACDCA42C984ECD00853691 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90ACDCA32C984ECD00853691 /* Twitch_Chat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90ACDCA52C984ECD00853691 /* Twitch_Chat */ = {
+			isa = PBXGroup;
+			children = (
+				90ACDCBA2C984F3800853691 /* Supporting Files */,
+				90DBB3AC2E40F1540035F920 /* App */,
+				90DBB3A92E40F1170035F920 /* Configuration */,
+				90DBB3AD2E40F1B80035F920 /* DependencyInjection */,
+				90DBB3AE2E40F1C90035F920 /* Factory */,
+				90F21BEF2E3D073100D79E46 /* NetworkKit */,
+				908FC9702E3E47C200F3541C /* ImageLoader */,
+				90DBB3AF2E40F21C0035F920 /* Modules */,
+				90B5E46D2E3A6A1300E3FC79 /* Views */,
+				90F933182E4B69F200CB54C8 /* ViewModel */,
+				90B5E46E2E3A6A4300E3FC79 /* Controllers */,
+			);
+			path = Twitch_Chat;
+			sourceTree = "<group>";
+		};
+		90ACDCBA2C984F3800853691 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90ACDCC12C9856CE00853691 /* Helpers */,
+				90ACDCAF2C984ECE00853691 /* Assets.xcassets */,
+				90ACDCB12C984ECE00853691 /* LaunchScreen.storyboard */,
+				90CF3C382E14074000632367 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90ACDCC12C9856CE00853691 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				903B83CD2CAFDCED00B9D27C /* UIViewController+PresentAlert.swift */,
+				90B78EA62CF5F1C5000A4BAF /* UIImage+ToGrayScale.swift */,
+				904019362D47931D0099918F /* UIImage+RotationToContextualActionImage.swift */,
+				9091FFBC2CFDEB4300570F66 /* UIColor+ConvertFromHex.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		90ACDCC62C9983E200853691 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90C921112E38E61600CD3DE4 /* IRCMessage.swift */,
+				908312DA2D2BDB6D00159B8C /* StreamerInfo.swift */,
+				900A72F12CBE94C700B4C85E /* FollowedChannelInfo.swift */,
+				908FC96C2E3E3F2C00F3541C /* ChannelUIConfig.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		90B5E46A2E3A694500E3FC79 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				90DBB3A32E40E3E80035F920 /* KeychainError.swift */,
+				90B5E46B2E3A69AC00E3FC79 /* Model */,
+				902313FC2D10363200FA9F6F /* Authentication */,
+				90A7E69B2CCA46CC0009C854 /* UserInfo */,
+				903A54172CB3DA2F00C5A4BB /* Token */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		90B5E46B2E3A69AC00E3FC79 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				903B83CB2CABFA7A00B9D27C /* NetWorkToken.swift */,
+				90E088CD2CC90C330026FFAD /* NetworkUserInfo.swift */,
+				908FC9712E3E730100F3541C /* SessionInfo.swift */,
+				902917712E3F96800030F711 /* EmptyResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		90B5E46D2E3A6A1300E3FC79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90ACDCBD2C98504E00853691 /* SignInView.swift */,
+				90B5E46F2E3A73E300E3FC79 /* ChatView */,
+				904A4AC62E180769002C923A /* ChannelView */,
+				908312DE2D2BEFBA00159B8C /* DeconnectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		90B5E46E2E3A6A4300E3FC79 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				908312E02D2BF1AB00159B8C /* TabBarController.swift */,
+				902BD1432C9984960051CF8E /* SignInViewController.swift */,
+				90E088C92CC903C30026FFAD /* ChannelViewController.swift */,
+				90D2F0B62D75AFD300B85326 /* TwitchChatViewController.swift */,
+				908312DC2D2BEE3F00159B8C /* DeconnectionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		90B5E46F2E3A73E300E3FC79 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				903A541C2CB3E41500C5A4BB /* TwitchChatView.swift */,
+				9091FFBA2CFDCF8000570F66 /* TwitchChatTableViewCell.swift */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
+		90C921172E38E6ED00CD3DE4 /* Streaming */ = {
+			isa = PBXGroup;
+			children = (
+				90ACDCC62C9983E200853691 /* Model */,
+				90F21BE92E3CF9F500D79E46 /* StreamerMetadataService.swift */,
+				905F8C262E4E2DA900403EFC /* Chat */,
+			);
+			path = Streaming;
+			sourceTree = "<group>";
+		};
+		90DBB3A92E40F1170035F920 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				90ACDCC22C997C9F00853691 /* APIConfigKey.swift */,
+				90E088C72CC8F9870026FFAD /* APIScope.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		90DBB3AC2E40F1540035F920 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				90ACDCA82C984ECD00853691 /* SceneDelegate.swift */,
+				90ACDCA62C984ECD00853691 /* AppDelegate.swift */,
+				90DBB3A72E40F0880035F920 /* AppConstants.swift */,
+				90DBB3A52E40F0530035F920 /* AppState.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		90DBB3AD2E40F1B80035F920 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				90F21BE72E3CEDE700D79E46 /* AppDependencyContainer.swift */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		90DBB3AE2E40F1C90035F920 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				90A4C58E2E3FB1C30052BE08 /* AppViewControllerFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		90DBB3AF2E40F21C0035F920 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				90B5E46A2E3A694500E3FC79 /* Authentication */,
+				90C921172E38E6ED00CD3DE4 /* Streaming */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		90DBB3B02E40F2350035F920 /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				90ACDCC42C997D6400853691 /* TwitchAuthEndpoint.swift */,
+				903A54142CB3D9DF00C5A4BB /* TwitchAPIEndpoint.swift */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		90F21BEF2E3D073100D79E46 /* NetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				90F21BED2E3D070400D79E46 /* NetworkClient.swift */,
+				90F21BF42E3D098100D79E46 /* NetworkErrors.swift */,
+				90F21BF62E3D0C2800D79E46 /* HTTPMethod.swift */,
+				90F21BF82E3D0C8400D79E46 /* RequestBuilder.swift */,
+				90DBB3B02E40F2350035F920 /* EndPoints */,
+				902917702E3F80760030F711 /* Extensions */,
+			);
+			path = NetworkKit;
+			sourceTree = "<group>";
+		};
+		90F933182E4B69F200CB54C8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				90F933162E4B69EE00CB54C8 /* ChatMessageStore.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90ACDCA22C984ECD00853691 /* Twitch_Chat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90ACDCB72C984ECE00853691 /* Build configuration list for PBXNativeTarget "Twitch_Chat" */;
+			buildPhases = (
+				90ACDC9F2C984ECD00853691 /* Sources */,
+				90ACDCA02C984ECD00853691 /* Frameworks */,
+				90ACDCA12C984ECD00853691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Twitch_Chat;
+			productName = Twitch_API;
+			productReference = 90ACDCA32C984ECD00853691 /* Twitch_Chat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90ACDC9B2C984ECD00853691 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					90ACDCA22C984ECD00853691 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 90ACDC9E2C984ECD00853691 /* Build configuration list for PBXProject "Twitch_Chat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90ACDC9A2C984ECD00853691;
+			productRefGroup = 90ACDCA42C984ECD00853691 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90ACDCA22C984ECD00853691 /* Twitch_Chat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90ACDCA12C984ECD00853691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90ACDCB32C984ECE00853691 /* LaunchScreen.storyboard in Resources */,
+				90ACDCB02C984ECE00853691 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90ACDC9F2C984ECD00853691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90ACDCC52C997D6400853691 /* TwitchAuthEndpoint.swift in Sources */,
+				903B83D02CAFE2E900B9D27C /* TokenManager.swift in Sources */,
+				902313FB2D10362800FA9F6F /* TokenService.swift in Sources */,
+				909D01252E4BB057005AF443 /* TwitchIRCParser.swift in Sources */,
+				90F21BEE2E3D070400D79E46 /* NetworkClient.swift in Sources */,
+				90DBB3A42E40E3E80035F920 /* KeychainError.swift in Sources */,
+				902917722E3F96800030F711 /* EmptyResponse.swift in Sources */,
+				90ACDCBE2C98504E00853691 /* SignInView.swift in Sources */,
+				908FC9722E3E730100F3541C /* SessionInfo.swift in Sources */,
+				90ACDCC32C997C9F00853691 /* APIConfigKey.swift in Sources */,
+				90FFEAE12CF4D36E004FF932 /* ImageLoader.swift in Sources */,
+				90DBB3A62E40F0530035F920 /* AppState.swift in Sources */,
+				90ACDCA72C984ECD00853691 /* AppDelegate.swift in Sources */,
+				90BEFCFD2CCFA60F00A597AA /* ChannelCollectionViewCell.swift in Sources */,
+				90F21BE82E3CEDE700D79E46 /* AppDependencyContainer.swift in Sources */,
+				909A70862CBD16CE00877C0E /* TwitchChatService.swift in Sources */,
+				9091FFBB2CFDCF8000570F66 /* TwitchChatTableViewCell.swift in Sources */,
+				902314002D104AF800FA9F6F /* UserInfoService.swift in Sources */,
+				902BD1482C99884E0051CF8E /* AuthLoader.swift in Sources */,
+				903A54152CB3D9DF00C5A4BB /* TwitchAPIEndpoint.swift in Sources */,
+				90D2F0B72D75AFD300B85326 /* TwitchChatViewController.swift in Sources */,
+				90F21BFB2E3D156D00D79E46 /* URLRequest+twitchGET.swift in Sources */,
+				903A541D2CB3E41500C5A4BB /* TwitchChatView.swift in Sources */,
+				908312DB2D2BDB6D00159B8C /* StreamerInfo.swift in Sources */,
+				90ACDCA92C984ECD00853691 /* SceneDelegate.swift in Sources */,
+				90A4C58F2E3FB1C30052BE08 /* AppViewControllerFactory.swift in Sources */,
+				90E088CC2CC90BFA0026FFAD /* UserInfoLoader.swift in Sources */,
+				904019372D47931D0099918F /* UIImage+RotationToContextualActionImage.swift in Sources */,
+				909D01232E4BAE05005AF443 /* TwitchIRCClient.swift in Sources */,
+				90A7E69A2CCA43730009C854 /* UserInfoManager.swift in Sources */,
+				900A72F42CC641D700B4C85E /* ChannelView.swift in Sources */,
+				908FC96D2E3E3F2C00F3541C /* ChannelUIConfig.swift in Sources */,
+				908312E12D2BF1AB00159B8C /* TabBarController.swift in Sources */,
+				90B78EA72CF5F1C5000A4BAF /* UIImage+ToGrayScale.swift in Sources */,
+				90E088C82CC8F9870026FFAD /* APIScope.swift in Sources */,
+				902BD1442C9984960051CF8E /* SignInViewController.swift in Sources */,
+				90DBB3A82E40F0880035F920 /* AppConstants.swift in Sources */,
+				903B83CC2CABFA7A00B9D27C /* NetWorkToken.swift in Sources */,
+				90AEA9542CAFF9910088E515 /* TokenLoader.swift in Sources */,
+				90C921122E38E61600CD3DE4 /* IRCMessage.swift in Sources */,
+				90F21BF72E3D0C2800D79E46 /* HTTPMethod.swift in Sources */,
+				908312DF2D2BEFBA00159B8C /* DeconnectionView.swift in Sources */,
+				90DBB3AB2E40F1360035F920 /* ImageLoaderError.swift in Sources */,
+				902313FE2D10489100FA9F6F /* AuthService.swift in Sources */,
+				90E088CE2CC90C330026FFAD /* NetworkUserInfo.swift in Sources */,
+				90F933172E4B69EE00CB54C8 /* ChatMessageStore.swift in Sources */,
+				9091FFBD2CFDEB4300570F66 /* UIColor+ConvertFromHex.swift in Sources */,
+				90F21BEA2E3CF9F500D79E46 /* StreamerMetadataService.swift in Sources */,
+				903B83CE2CAFDCED00B9D27C /* UIViewController+PresentAlert.swift in Sources */,
+				908312DD2D2BEE3F00159B8C /* DeconnectionViewController.swift in Sources */,
+				90F21BF52E3D098100D79E46 /* NetworkErrors.swift in Sources */,
+				90F21BF92E3D0C8400D79E46 /* RequestBuilder.swift in Sources */,
+				90E088CA2CC903C30026FFAD /* ChannelViewController.swift in Sources */,
+				900A72F22CBE94C700B4C85E /* FollowedChannelInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		90ACDCB12C984ECE00853691 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90ACDCB22C984ECE00853691 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90ACDCB52C984ECE00853691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90F6DB3E2E50BCF000A4EDA4 /* Secrets.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		90ACDCB62C984ECE00853691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90F6DB3E2E50BCF000A4EDA4 /* Secrets.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90ACDCB82C984ECE00853691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SLU587K7HW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Twitch_Chat/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SCHENANicolas.Twitch-API";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		90ACDCB92C984ECE00853691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SLU587K7HW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Twitch_Chat/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SCHENANicolas.Twitch-API";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90ACDC9E2C984ECD00853691 /* Build configuration list for PBXProject "Twitch_Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90ACDCB52C984ECE00853691 /* Debug */,
+				90ACDCB62C984ECE00853691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90ACDCB72C984ECE00853691 /* Build configuration list for PBXNativeTarget "Twitch_Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90ACDCB82C984ECE00853691 /* Debug */,
+				90ACDCB92C984ECE00853691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90ACDC9B2C984ECD00853691 /* Project object */;
+}
